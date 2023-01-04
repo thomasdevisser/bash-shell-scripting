@@ -31,7 +31,9 @@ else
   echo "You're $AGE, which means you're too young"
 fi
 
-if [ "$AGE" -gt 27 ] && [ "$AGE" -lt 40 ]; then
+# These are two different ways of writing this statement
+# if [ "$AGE" -gt 27 ] && [ "$AGE" -lt 40 ]; then
+if [[ "$AGE" -gt 27 && "$AGE" -lt 40 ]]; then
   echo "You're older than me"
 elif [ "$AGE" -lt 27 ]; then
   echo "You're younger than me"
